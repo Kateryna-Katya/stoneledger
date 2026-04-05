@@ -187,6 +187,7 @@ width: 343px;
 .faq-acc-el {
     position: relative;
     transition: margin-bottom 0.3s ease;
+        border-bottom: 2px solid #aad0ff;
 }
 
 .faq-acc-el-title {
@@ -196,7 +197,7 @@ width: 343px;
 .faq-acc-el-trigger {
     border: none;
     background: inherit;
-    border-bottom: 2px solid #aad0ff;
+
     padding: 0px 0px 17px;
 width: 343px;
     height: auto;
@@ -263,7 +264,9 @@ width: 343px;
 .faq-container {
     padding-bottom: 100px;
 }
-
+.faq-acc-el:last-child{
+border-bottom: none;
+}
 
 @media only screen and (min-width: 1440px) {
     .faq-acc {
