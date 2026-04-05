@@ -67,20 +67,16 @@ font-weight: 400;
 }
 
 @media only screen and (min-width: 1440px) {
-    .policy-container {
-        padding-left: 212px;
-        padding-right: 212px;
-    }
 
     .background {
-        font-size: 16px;
+font-size: 18px;
     }
 
     .privacy-title {
-        font-size: 62px;
+font-size: 48px;
     }
 
     .policy-subtitle {
-        font-size: 24px;
+font-size: 28px;
     }
 }
