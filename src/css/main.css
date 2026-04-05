@@ -84,12 +84,48 @@ height: 759px;
 .how-container{
     flex-direction: row-reverse;
     gap: 43px;
+    padding-left: 86px;
 }
 .how-wrapper{
-    width: 560px;
+    width: 544px;
 }
 .big{
     margin-bottom: 32px;
     font-size: 20px;
 }
+.how-list{
+    padding-left: 30px;
+}
+}
+/* Core Mechanics */
+.core-container{
+    display: flex;
+        flex-direction: column;
+        gap: 32px;
+       padding-right: 86px;
+}
+.core-text-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.core-span{
+    font-size: 18px;
+}
+@media only screen and (min-width: 1440px) {
+ .core-container{
+    flex-direction: row;
+    gap: 37px;
+    align-items: center;
+    justify-content: center;
+ }
+ .core-wrapper{
+    width: 544px;
+ }
+ .core-text-wrapper{
+    gap: 30px;
+ }
+ .core-span {
+     font-size: 20px;
+ }
 }
