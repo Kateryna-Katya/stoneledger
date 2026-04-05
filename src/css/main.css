@@ -175,3 +175,114 @@ height: 759px;
     font-size: 20px;
  }
 }
+/* faq */
+.faq-acc {
+    display: flex;
+    flex-direction: column;
+width: 343px;
+    margin: 0 auto;
+    gap: 12px;
+}
+
+.faq-acc-el {
+    position: relative;
+    transition: margin-bottom 0.3s ease;
+}
+
+.faq-acc-el-title {
+    margin-bottom: 0;
+}
+
+.faq-acc-el-trigger {
+    border: none;
+    background: inherit;
+    border-bottom: 2px solid #aad0ff;
+    padding: 0px 0px 17px;
+width: 343px;
+    height: auto;
+font-family: "Bona Nova", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #aad0ff;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+}
+
+
+.faq-acc-arr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    transition: transform 0.3s ease;
+}
+
+.faq-acc-arr.is-hidden {
+    display: none;
+}
+
+.faq-acc-el-descr-frame {
+    background: inherit;
+width: 343px;
+    text-align: left;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease, border-bottom 0.3s ease;
+}
+
+.faq-acc-el.js-enabled .faq-acc-el-descr-frame {
+    visibility: hidden;
+}
+
+
+
+.faq-acc-el.open .faq-acc-el-descr-frame {
+font-family: "Bona Nova", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #f5f5f5;
+    visibility: visible;
+    opacity: 1;
+    border: none;
+    padding-top: 16px;
+    background: inherit;
+width: 343px;
+    max-height: 500px;
+    margin-bottom: 16px;
+}
+
+.faq-container {
+    padding-bottom: 150px;
+}
+
+
+@media only screen and (min-width: 1440px) {
+    .faq-acc {
+width: 1120px;
+        margin: 0 auto;
+        gap: 16px;
+    }
+
+    .faq-acc-el-trigger {
+width: 1120px;
+        font-size: 20px;
+    }
+
+    .faq-acc-el-descr-frame {
+width: 1120px;
+    }
+
+    .faq-acc-el.open .faq-acc-el-descr-frame {
+width: 1120px;
+font-size: 18px;
+    }
+}
